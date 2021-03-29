@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamica</title>
+    <!---CUSTOM CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   
+        
+    
+        
+    <img src="Logo.svg" alt="logo" class="nav-logo">
+            <ul class="nav-menú">
+                <li>
+                    <a href="a">Ropa</a>
+                </li> <li>
+                    <a href="a">Accesorios                    
+                    </a>
+                </li> <li>
+                    <a href="a">Zapatos</a>
+                </li>
+                
+            <ul>
+              <div class="imagendos">  <img src="shopping-card.svg" alt="shopping-car"></div>
+    
+            </ul>
+        
+    
+    
+
+   
+
+    </nav>
+    <hr>
+
+    <header class="Cabecera">
+
+    <h2>Tienda de ropa</h2>
+   
+
+    
+    <a href="a">Ver más <i class="Vermás"></i></a>
+    <div class="grid-container">
+        <div class="grid-item1"> <p>Visita una de las mejores tiendas de ropa y calzado de la ciudad de la eterna primavera, estamos ubicados en el centro comercial la playa y te atenderemos con gusto</p>  </div>
+        <div class="grid-item2"> <img src="nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash@2x.png" class="Imagen1" > </div>
+        <div class="grid-item3"> <img src="andres-jasso-PqbL_mxmaUE-unsplash@2x.png">
+        <div class="grid-item4"> <img src="omar-lopez-9w20MZ0lsK8-unsplash@2x.png" >
+        <div class="grid-item5"> <img src="freestocks-_3Q3tsJ01nc-unsplash@2x.png">
+
+        </div>
+
+    </header>
+</div>
+
+
+    
+</body>
+</html>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    
+}
+.nav-main {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    padding: 0px;
+    
+
+}
+.nav-logo {
+    width: 110px;
+}
+
+
+
+
+.nav-menú  {
+    display: flex;
+
+}
+.nav-menú li{
+padding: 10px;
+ }
+
+.nav-menú{
+flex: 1;
+margin-left: 20px;
+}
+
+.cabecera {
+    width: 100%;
+    height: 400%;
+    
+    
+}
+.Imagen1 {
+    float: right;
+    width: 600px;
+    height: 400px;
+}
+.container-cabecera {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+    grid-gap: 5px;
+}
+.grid-item1 {
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1; 
+    grid-row-end: 3;
+
+}
+.grid-item2 {
+    text-align: right;
+    grid-area: area2;
+
+
+}
+.grid-container{
+display: grid;
+grid-template-rows: 100px 100px 100px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 5px;
+grid-template-areas: 
+"area1 area1 area1 area1 area1"
+"area2 area2 . area3 area3"
+"area2 area2 area1 area4 area4"
+;
+align-items: start;
+}
+.item1 {
+grid-area: area1;
+}
+.item2 {
+grid-area: area2; 
+align-self: start;   
+}
+.item3 {
+ grid-area: c;
+ align-self: end;
+}
+item4 {
+    grid-area: d;
+    align-self: center;
+}
